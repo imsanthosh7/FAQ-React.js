@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 function Faqitem({question,answer}) {
     const [display, setDisplay] = useState(false);
 
-    function showdisply() {
+    function showdisplay() {
         setDisplay(!display);
     }
 
@@ -14,7 +14,7 @@ function Faqitem({question,answer}) {
             <div className='w-full h-full flex justify-center items-center my-5 '>
                 <div className='w-auto h-auto'>
                     <div className=''>
-                        <div onClick={showdisply} className='flex justify-between p-4 bg-blue-300 rounded h-16 md:w-[700px] cursor-pointer'>
+                        <div onClick={showdisplay} className='flex justify-between p-4 bg-blue-300 rounded h-16 md:w-[700px] cursor-pointer'>
                             <h1 className=' text-lg font-semibold text-gray-800'>{question}</h1>
                         </div>
                         <div className={`${display ?
